@@ -6,11 +6,11 @@
 (function($){
 	$.fn.tabPlugin = function(ayar){
 			var deger={
-						tab:$('#tab_main'),
-						tab_active_class:"active",
-						tab_click:$('ul li'),
-						effect:'fade',
-						sec:500
+				tab:$('#tab_main'),
+				tab_click:$('ul li'),
+				tab_active_class:'active',
+				effect:'fade',
+				sec:500
 					  };
 					
 			var ayar = $.extend(deger,ayar);
