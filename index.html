@@ -10,21 +10,54 @@
     
     
     
-    <!-- menuPlugin.js -->
-    <script src="menuPlugin.js"></script>
+    <!-- tabPlugin.js -->
+    <script src="tabPlugin.js"></script>
     
     <!-- useage -->
     <script>
    
     $(function(){
 
-      $("#menu ul li").menuPlugin({
-                      effect:'slide',
-                      sec:800
-                                });
+        $('#main').tabPlugin({
+            tab:$('#tab_main'),
+            tab_click:$('ul li'),
+            tab_active_class:'active',
+            effect:'fade',
+            sec:1000
+                            });
 
               });
     </script>
     
 </head>
 <body>
+<div id="main">
+<ul>
+<li>Tab 1</li>
+<li>Tab 2</li>
+<li>Tab 3</li>
+<li>Tab 4</li>
+</ul>
+
+<div id="tab_main">
+
+<div id="tab">
+<p>Bu birinci Tab</p>
+<img src="img.jpg">
+</div>
+
+<div id="tab">
+<p>Bu İkinci Tab</p>
+<img src="img2.jpg">
+</div>
+
+<div id="tab">
+<p>Bu Üçüncü Tab</p>
+<img src="img3.jpg">
+</div>
+
+</div>
+
+</div>
+</body>
+</html>
